@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Delight - Makanan Khas Thailand</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Sarabun:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="thai-emblem">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Emblem_of_Thailand.svg" alt="Lambang Thailand" width="40">
+                </div>
+                <div>
+                    <h1>Thai<span>Delight</span></h1>
+                    <p class="thai-text">อาหารไทยแท้</p>
+                    <p class="translation">Authentic Thai Cuisine</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#cart" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Authentic Thai Food Experience</h2>
+            <p>Discover the rich flavors of Thailand's culinary heritage</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+        <div class="thai-pattern"></div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Signature Dishes</h2>
+            <!-- di dalam .menu-categories -->
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="appetizer">Appetizers</button>
+                <button class="category-btn" data-category="main">Main Courses</button>
+                <button class="category-btn" data-category="dessert">Desserts</button>
+                 <button class="category-btn" data-category="drink">Drinks</button>
+            </div>
+            <div class="menu-items" id="menu-items">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About Thai Cuisine</h2>
+                <p>Thai cuisine is known for its balance of five fundamental flavors in each dish or the overall meal - hot (spicy), sour, sweet, salty, and bitter (optional).</p>
+                <p>Our chefs use authentic ingredients imported directly from Thailand to ensure the most genuine taste experience.</p>
+                <div class="signature-dishes">
+                    <h3>Must-Try Dishes:</h3>
+                    <ul>
+                        <li>Tom Yum Goong (ต้มยำกุ้ง) - Spicy Shrimp Soup</li>
+                        <li>Pad Thai (ผัดไทย) - Stir-Fried Noodles</li>
+                        <li>Som Tum (ส้มตำ) - Spicy Green Papaya Salad</li>
+                        <li>Gaeng Daeng (แกงแดง) - Red Curry</li>
+                        <li>Khao Niew Mamuang (ข้าวเหนียวมะม่วง) - Mango Sticky Rice</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Thai Chef">
+                <div class="thai-script">อาหารไทย</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Food Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Thai Food">
+                    <div class="overlay">Pad Thai (ผัดไทย)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517646287270-a5a9ca602e5c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Thai Food">
+                    <div class="overlay">Tom Yum (ต้มยำ)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Thai Food">
+                    <div class="overlay">Green Curry (แกงเขียวหวาน)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Thai Food">
+                    <div class="overlay">Mango Sticky Rice (ข้าวเหนียวมะม่วง)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Thai Street, Bangkok District</p>
+                    <p><i class="fas fa-phone"></i> +66 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@thaidelight.com</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="thai-symbol">
+                        <img src="hhttps://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/2560px-Flag_of_Thailand.svg.png" alt="Bendera Thailand">
+                        <p>สวัสดีค่ะ (Sawasdee ka)</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div class="cart-modal" id="cart">
+        <div class="cart-content">
+            <h2>Your Order <span class="thai-text">คำสั่งซื้อของคุณ</span></h2>
+            <div class="cart-items"></div>
+            <div class="cart-total">Total: <span class="total-amount">฿0</span></div>
+            <button class="btn checkout-btn">Checkout</button>
+            <button class="btn close-cart">Continue Shopping</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ThaiDelight</h3>
+                    <p>Bringing authentic Thai flavors to your table since 2010.</p>
+                    <p class="thai-text-footer">นำรสชาติไทยแท้มาสู่โต๊ะอาหารของคุณ</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Friday: 11am - 10pm</p>
+                    <p>Saturday - Sunday: 10am - 11pm</p>
+                    <p class="thai-text-footer">จันทร์-ศุกร์: 11:00-22:00 น.</p>
+                    <p class="thai-text-footer">เสาร์-อาทิตย์: 10:00-23:00 น.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; <span id="current-year"></span> ThaiDelight. All Rights Reserved.</p>
+                <p class="thai-text-footer">สงวนลิขสิทธิ์</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

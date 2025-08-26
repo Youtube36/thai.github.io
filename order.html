@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice • ThaiDelight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container invoice-container">
+    <div class="invoice-header">
+      <h1 class="invoice-logo">ไทยเดไลท์</h1>
+      <h2>Invoice</h2>
+    </div>
+
+    <div id="invoice-content">
+      <div class="customer-info">
+        <h3>Customer Details:</h3>
+        <p>Name: <span id="customer-name">-</span></p>
+        <p>Address: <span id="customer-address">-</span></p>
+        <p>Order Date: <span id="order-date">-</span></p>
+      </div>
+
+      <div class="order-summary">
+        <h3>รายการอาหาร (Order Items):</h3>
+        <table id="order-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="order-items"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">Print Invoice</button>
+  </div>
+
+  <script src="invoice.js"></script>
+</body>
+</html>
